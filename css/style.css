@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.debug{
+    background-color: aqua;
+    border: 1px solid black;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: calc(100% / 3);
+    padding: 0 10px;
+}
+main{
+    padding-top: 100px;
+}
+
+.card{
+    margin-bottom: 20px;
+}
+
+.card .card-image{
+    position: relative;
+    cursor: pointer;
+}
+
+.card .card-image .seconda-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.card .card-image:hover .seconda-image{
+    display: block;
+}
+
+.card .card-image .cuore{
+    position: absolute;
+    background-color: white;
+    padding: 20px 15px;
+    top: 20px;
+    right: 0;
+}
+
+.card .card-image .cuore:hover{
+    color: red;
+}
+
+.card .card-image .badges{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.card .card-image .badges .badge{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-right: 2px;
+}
+
+.card .card-image .badges .badge.tag{
+    background-color: green;
+}
+
+.card .nome-modello{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .prezzi span{
+    font-weight: bold;
+    color: red;
+}
